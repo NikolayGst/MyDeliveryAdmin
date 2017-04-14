@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="ru.mydelivery.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/menu_floating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        fab:fab_addButtonColorNormal="#0288d1"
+        fab:fab_addButtonColorPressed="#0277bd"
+        fab:fab_addButtonPlusIconColor="#ffffff"
+        fab:fab_labelStyle="@style/btnFloat">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fabSize="normal"
+            fab:fab_colorNormal="#ff0004"
+            fab:fab_colorPressed="#b71c1c"
+            fab:fab_icon="@mipmap/ic_fab_add"
+            fab:fab_title="@string/btn_add" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fabSize="normal"
+            fab:fab_colorNormal="#00c853"
+            fab:fab_colorPressed="#2e7d32"
+            fab:fab_icon="@mipmap/ic_fab_refresh"
+            fab:fab_title="@string/btn_refresh" />
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+</RelativeLayout>

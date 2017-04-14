@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Админ панель</string>
+    <string name="btn_refresh">обновить</string>
+    <string name="btn_add">Добавить задание</string>
+    <string name="action_settings">Настройки</string>
+    <string-array name="select_status">
+        <item>Не выбрано</item>
+        <item>Перенесен</item>
+        <item>Частичный возврат</item>
+        <item>отменен</item>
+        <item>Выполнено</item>
+    </string-array>
+</resources>
